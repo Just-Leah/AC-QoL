@@ -3,7 +3,7 @@
   "button.ac_qol.warp.canada": "Canada",
   "button.ac_qol.warp.endermanfarm": "EnderEnder",
   "button.ac_qol.warp.farm": "Public Farm",
-  "button.ac_qol.warp.gwr": "WorldRecordStream",
+  "button.ac_qol.warp.gwr": "Guinness World Record Stream",
   "button.ac_qol.warp.jobs": "Jobs",
   "button.ac_qol.warp.minigames": "Minigame World",
   "button.ac_qol.warp.mobfarm": "Mob Farms",
@@ -14,7 +14,7 @@
   "button.ac_qol.warp.spawn2": "Spawn 2",
   "button.ac_qol.warp.spawn3": "Spawn 3",
   "button.ac_qol.warp.spawn4": "Spawn 4",
-  "button.ac_qol.warp.tao": "ThinkingAboutOthers",
+  "button.ac_qol.warp.tao": "Thinking About Others",
   "button.ac_qol.warp.tardis": "Tardis",
   "button.ac_qol.warp.tardis1": "Tardis 1",
   "button.ac_qol.warp.tardis2": "Tardis 2",
@@ -22,5 +22,10 @@
   "button.ac_qol.warp.wither": "Wither World",
   "button.ac_qol.warp.worlds": "World Portals",
   "category.ac_qol.keybinds": "Autcraft Quality of Life",
+  "gui.ac_qol.warp.tabs.archive": "Archive",
+  "gui.ac_qol.warp.tabs.events": "Events",
+  "gui.ac_qol.warp.tabs.farms": "Farms",
+  "gui.ac_qol.warp.tabs.main": "Quick Warps",
+  "gui.ac_qol.warp.tabs.qol": "Only on Autcraft",
   "key.ac_qol.open_gui": "Open GUI"
 }
