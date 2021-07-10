@@ -10,23 +10,35 @@ import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.util.InputUtil;
 import org.lwjgl.glfw.GLFW;
 
+/*
+Client init code, this is where the keybinds are created
+ */
+
 public class AutcraftQoLClient implements ClientModInitializer {
 
+    // Creates the keybind, however the game does not know that this keybind exists yet
     private static KeyBinding openGUI;
 
     @Override
     public void onInitializeClient() {
 
+        /*
+        This registers the keybind so the game knows it exists and
+        also knows where to find it again
+         */
         openGUI = KeyBindingHelper.registerKeyBinding(new KeyBinding(
-                "key.ac_qol.open_gui", // The translation key of the keybinding's name
-                InputUtil.Type.KEYSYM, // The type of the keybinding, KEYSYM for keyboard, MOUSE for mouse.
-                GLFW.GLFW_KEY_G, // The keycode of the key
-                "category.ac_qol.keybinds" // The translation key of the keybinding's category.
+                "key.ac_qol.open_gui", // Keybind name: used to show a human friendly name with the lang file and also so the game has a way of identifying this keybind again
+                InputUtil.Type.KEYSYM, // Specifies that this is a keyboard based keybind.
+                GLFW.GLFW_KEY_G, // Key that this keybind defaults to (in this case G)
+                "category.ac_qol.keybinds" // Category name for keybind. Provides human friendly name using lang file and also identifies the sorting of this keybind for the controls menu
         ));
 
-        ClientTickEvents.END_CLIENT_TICK.register(client -> {
-            while (openGUI.wasPressed()) {
-                MinecraftClient.getInstance().openScreen(new ACQoLScreen(new warpGui()));
+        /*
+        This is where the code the keybind executes on press is stored
+         */
+        ClientTickEvents.END_CLIENT_TICK.register(client -> { // Tells the game that we want to listen to something on the client side
+            while (openGUI.wasPressed()) { // Listens for the keybind being pressed
+                MinecraftClient.getInstance().openScreen(new ACQoLScreen(new warpGui())); // Opens the warp GUI
             }
         });
     }
