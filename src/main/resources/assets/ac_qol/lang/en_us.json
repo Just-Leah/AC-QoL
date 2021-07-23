@@ -27,5 +27,7 @@
   "gui.ac_qol.warp.tabs.farms": "Farms",
   "gui.ac_qol.warp.tabs.main": "Quick Warps",
   "gui.ac_qol.warp.tabs.qol": "Only on Autcraft",
-  "key.ac_qol.open_gui": "Open GUI"
+  "key.ac_qol.open_gui": "Open GUI",
+  "modmenu.descriptionTranslation.ac_qol": "A collection of quality of life features for Autcraft. Currently includes a GUI for the warp command. Please report issues/suggest improvements at either the forum thread (Homepage) or the Github issue tracker (Issues)",
+  "modmenu.summaryTranslation.ac_qol": "A collection of QoL features for AC"
 }

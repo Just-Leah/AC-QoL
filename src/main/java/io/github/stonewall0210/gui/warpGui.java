@@ -197,7 +197,7 @@ public class warpGui extends LightweightGuiDescription {
         WButton gwr = new WButton(new TranslatableText("button.ac_qol.warp.gwr"));
         gwr.setOnClick(() -> {
             if (MinecraftClient.getInstance().player != null) {
-                MinecraftClient.getInstance().player.sendChatMessage("/warp gwr");
+                MinecraftClient.getInstance().player.sendChatMessage("/warp gwr_world");
             }
         });
         events.add(gwr, 0, 20, 200, 20);

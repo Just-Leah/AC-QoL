@@ -9,8 +9,9 @@
     "Stonewall0210"
   ],
   "contact": {
-    "homepage": "autcraft.com",
-    "sources": "https://github.com/Stonewall0210/AC-QoL"
+    "homepage": "https://github.com/Stonewall0210",
+    "sources": "https://github.com/Stonewall0210/AC-QoL",
+    "issues": "https://github.com/Stonewall0210/AC-QoL/issues"
   },
 
   "license": "CC0-1.0",
