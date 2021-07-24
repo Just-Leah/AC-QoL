@@ -246,13 +246,29 @@ public class warpGui extends LightweightGuiDescription {
         });
         archive.add(spawn4, 100, 40, 100, 20);
 
+        WButton tardisArchive = new WButton(new TranslatableText("button.ac_qol.warp.tardis"));
+        tardisArchive.setOnClick(() -> {
+            if (MinecraftClient.getInstance().player != null) {
+                MinecraftClient.getInstance().player.sendChatMessage("/warp tardis");
+            }
+        });
+        archive.add(tardisArchive, 0, 60, 200, 20);
+
         WButton tardis1 = new WButton(new TranslatableText("button.ac_qol.warp.tardis1"));
         tardis1.setOnClick(() -> {
             if (MinecraftClient.getInstance().player != null) {
                 MinecraftClient.getInstance().player.sendChatMessage("/warp tardis1");
             }
         });
-        archive.add(tardis1, 0, 60, 200, 20);
+        archive.add(tardis1, 0, 80, 100, 20);
+
+        WButton tardis2 = new WButton(new TranslatableText("button.ac_qol.warp.tardis2"));
+        tardis2.setOnClick(() -> {
+            if (MinecraftClient.getInstance().player != null) {
+                MinecraftClient.getInstance().player.sendChatMessage("/warp tardis2");
+            }
+        });
+        archive.add(tardis2, 100, 80, 100, 20);
 
         warpTabs.validate(this);
     }
