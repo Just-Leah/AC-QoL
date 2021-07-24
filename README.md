@@ -1,17 +1,15 @@
 # AC-QoL
 ### Client side mod with some quality of life features for Autcraft
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/Stonewall0210/AC-QoL/build) ![GitHub repo size](https://img.shields.io/github/repo-size/Stonewall0210/AC-QoL) ![GitHub commits since tagged version](https://img.shields.io/github/commits-since/Stonewall0210/AC-QoL/0.1.0)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/Stonewall0210/AC-QoL/build) ![GitHub repo size](https://img.shields.io/github/repo-size/Stonewall0210/AC-QoL)
 
 ---
 
 ## Features
 
-- Warp GUI, with all of the current warps *as of 10/07/2021*
+- Warp GUI, with all of the current warps *as of 24/07/2021*
 
 ## Install instructions
-
-**Please note that the mod is made for 1.17.1, and will not be backported due to AC being in the stages of updating anyway.** If I wait for AC to update anyway, it gives me enough time to make it production ready.
 
 ### From Github Actions
 
