@@ -46,11 +46,11 @@ public class warpGui extends LightweightGuiDescription {
         This is where the paths to icon textures ~~are~~ will be stored, as soon as I get textures.
          */
         WTabPanel warpTabs = new WTabPanel();
-        warpTabs.add(main, tab -> tab.icon(new ItemIcon(new ItemStack(Items.ARMOR_STAND))).tooltip(new TranslatableText("gui.ac_qol.warp.tabs.main")));
+        warpTabs.add(main, tab -> tab.icon(new ItemIcon(new ItemStack(Items.ENDER_EYE))).tooltip(new TranslatableText("gui.ac_qol.warp.tabs.main")));
         warpTabs.add(QoL, tab -> tab.icon(new ItemIcon(new ItemStack(Items.COOKIE))).tooltip(new TranslatableText("gui.ac_qol.warp.tabs.qol")));
-        warpTabs.add(farms, tab -> tab.icon(new ItemIcon(new ItemStack(Items.FARMLAND))).tooltip(new TranslatableText("gui.ac_qol.warp.tabs.farms")));
+        warpTabs.add(farms, tab -> tab.icon(new ItemIcon(new ItemStack(Items.BAKED_POTATO))).tooltip(new TranslatableText("gui.ac_qol.warp.tabs.farms")));
         warpTabs.add(events, tab -> tab.icon(new ItemIcon(new ItemStack(Items.DRAGON_EGG))).tooltip(new TranslatableText("gui.ac_qol.warp.tabs.events")));
-        warpTabs.add(archive, tab -> tab.icon(new ItemIcon(new ItemStack(Items.BUNDLE))).tooltip(new TranslatableText("gui.ac_qol.warp.tabs.archive")));
+        warpTabs.add(archive, tab -> tab.icon(new ItemIcon(new ItemStack(Items.BARREL))).tooltip(new TranslatableText("gui.ac_qol.warp.tabs.archive")));
         setRootPanel(warpTabs);
 
         /*
@@ -265,7 +265,7 @@ public class warpGui extends LightweightGuiDescription {
         WButton tardis2 = new WButton(new TranslatableText("button.ac_qol.warp.tardis2"));
         tardis2.setOnClick(() -> {
             if (MinecraftClient.getInstance().player != null) {
-                MinecraftClient.getInstance().player.sendChatMessage("/warp tardis2");
+                MinecraftClient.getInstance().player.sendChatMessage("/essentials:warp tardis2");
             }
         });
         archive.add(tardis2, 100, 80, 100, 20);
