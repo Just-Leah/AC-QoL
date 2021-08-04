@@ -11,13 +11,7 @@
 
 ## Install instructions
 
-### From Github Actions
-
-Navigate to github actions, and download the artifacts from the latest workflow ran. The main `.jar` comes with LibGui, and requires Fabric API
-
-### From releases/forum
-
-There should be a `README.txt` in the zip file, read that for full install instructions.
+Unless you know what you doing, [you can see install instructions here!](INSTALLINSTRUCTIONS.md)
 
 ## Can I help?
 
