@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "ac_qol",
-  "version": "0.1.0",
+  "version": "1.0.0",
 
   "name": "Autcraft Quality of Life",
   "description": "A collection of QoL features for Autcraft",
@@ -9,7 +9,7 @@
     "Stonewall0210"
   ],
   "contact": {
-    "homepage": "https://github.com/Stonewall0210",
+    "homepage": "https://www.autcraft.com/forum/m/16338872/viewthread/33572563-mod-autcraft-quality-life",
     "sources": "https://github.com/Stonewall0210/AC-QoL",
     "issues": "https://github.com/Stonewall0210/AC-QoL/issues"
   },

@@ -1,17 +1,15 @@
 package io.github.stonewall0210.gui;
 
 import io.github.cottonmc.cotton.gui.client.LightweightGuiDescription;
-import io.github.cottonmc.cotton.gui.widget.*;
+import io.github.cottonmc.cotton.gui.widget.WButton;
+import io.github.cottonmc.cotton.gui.widget.WPlainPanel;
+import io.github.cottonmc.cotton.gui.widget.WTabPanel;
 import io.github.cottonmc.cotton.gui.widget.data.Insets;
 import io.github.cottonmc.cotton.gui.widget.icon.ItemIcon;
-import net.minecraft.item.Item;
+import net.minecraft.client.MinecraftClient;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
-import net.minecraft.text.LiteralText;
-import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
-import net.minecraft.util.Identifier;
-import net.minecraft.client.MinecraftClient;
 
 /*
 This is where the warp GUI is stored
@@ -62,7 +60,8 @@ public class warpGui extends LightweightGuiDescription {
         Main
             The warps that are mainly used the most
          */
-        WButton spawn = new WButton(new TranslatableText("button.ac_qol.warp.spawn")); // Creates the button, and applies the text ~~and icon~~
+        WButton spawn = new WButton(new TranslatableText("button.ac_qol.warp.spawn")); // Creates the button, and applies the text to it.
+        spawn.setIcon(new ItemIcon(new ItemStack(Items.LIGHT_BLUE_STAINED_GLASS))); // Adds an icon to the button
         spawn.setOnClick(() -> { // Sets the click action for the button
             if (MinecraftClient.getInstance().player != null) { // Makes sure that a player is running the code. This is for if you somehow run this on a server, it wont crash ;)
                 MinecraftClient.getInstance().player.sendChatMessage("/spawn"); // Sends the command in the players name (eg. the warp command)
@@ -71,6 +70,7 @@ public class warpGui extends LightweightGuiDescription {
         main.add(spawn, 0, 0, 100, 20); // Adds the button to the correct tab, with the correct dimensions
 
         WButton worlds = new WButton(new TranslatableText("button.ac_qol.warp.worlds"));
+        worlds.setIcon(new ItemIcon(new ItemStack(Items.END_PORTAL_FRAME)));
         worlds.setOnClick(() -> {
             if (MinecraftClient.getInstance().player != null) {
                 MinecraftClient.getInstance().player.sendChatMessage("/warp worlds");
@@ -79,6 +79,7 @@ public class warpGui extends LightweightGuiDescription {
         main.add(worlds, 0, 20, 100, 20);
 
         WButton shops = new WButton(new TranslatableText("button.ac_qol.warp.shops"));
+        shops.setIcon(new ItemIcon(new ItemStack(Items.EMERALD)));
         shops.setOnClick(() -> {
             if (MinecraftClient.getInstance().player != null) {
                 MinecraftClient.getInstance().player.sendChatMessage("/warp shops");
@@ -87,6 +88,7 @@ public class warpGui extends LightweightGuiDescription {
         main.add(shops, 0, 40, 100, 20);
 
         WButton wither = new WButton(new TranslatableText("button.ac_qol.warp.wither"));
+        wither.setIcon(new ItemIcon(new ItemStack(Items.WITHER_ROSE)));
         wither.setOnClick(() -> {
             if (MinecraftClient.getInstance().player != null) {
                 MinecraftClient.getInstance().player.sendChatMessage("/warp wither");
@@ -95,6 +97,7 @@ public class warpGui extends LightweightGuiDescription {
         main.add(wither, 100, 0, 100, 20);
 
         WButton minigames = new WButton(new TranslatableText("button.ac_qol.warp.minigames"));
+        minigames.setIcon(new ItemIcon(new ItemStack(Items.RED_BED)));
         minigames.setOnClick(() -> {
             if (MinecraftClient.getInstance().player != null) {
                 MinecraftClient.getInstance().player.sendChatMessage("/warp minigames");
@@ -103,6 +106,7 @@ public class warpGui extends LightweightGuiDescription {
         main.add(minigames, 100, 20, 100, 20);
 
         WButton tardis = new WButton(new TranslatableText("button.ac_qol.warp.tardis"));
+        tardis.setIcon(new ItemIcon(new ItemStack(Items.PLAYER_HEAD)));
         tardis.setOnClick(() -> {
             if (MinecraftClient.getInstance().player != null) {
                 MinecraftClient.getInstance().player.sendChatMessage("/warp tardis");
@@ -115,6 +119,7 @@ public class warpGui extends LightweightGuiDescription {
             Things that make AC what it is
          */
         WButton calmrooms = new WButton(new TranslatableText("button.ac_qol.warp.calmrooms"));
+        calmrooms.setIcon(new ItemIcon(new ItemStack(Items.NOTE_BLOCK)));
         calmrooms.setOnClick(() -> {
             if (MinecraftClient.getInstance().player != null) {
                 MinecraftClient.getInstance().player.sendChatMessage("/warp calmrooms");
@@ -123,6 +128,7 @@ public class warpGui extends LightweightGuiDescription {
         QoL.add(calmrooms, 0, 0, 200, 20);
 
         WButton spamrooms = new WButton(new TranslatableText("button.ac_qol.warp.spamrooms"));
+        spamrooms.setIcon(new ItemIcon(new ItemStack(Items.LEVER)));
         spamrooms.setOnClick(() -> {
             if (MinecraftClient.getInstance().player != null) {
                 MinecraftClient.getInstance().player.sendChatMessage("/warp spamrooms");
@@ -131,6 +137,7 @@ public class warpGui extends LightweightGuiDescription {
         QoL.add(spamrooms, 0, 20, 200, 20);
 
         WButton jobs = new WButton(new TranslatableText("button.ac_qol.warp.jobs"));
+        jobs.setIcon(new ItemIcon(new ItemStack(Items.NETHERITE_PICKAXE)));
         jobs.setOnClick(() -> {
             if (MinecraftClient.getInstance().player != null) {
                 MinecraftClient.getInstance().player.sendChatMessage("/warp jobs");
@@ -139,6 +146,7 @@ public class warpGui extends LightweightGuiDescription {
         QoL.add(jobs, 0, 40, 200, 20);
 
         WButton tao = new WButton(new TranslatableText("button.ac_qol.warp.tao"));
+        tao.setIcon(new ItemIcon(new ItemStack(Items.SPYGLASS)));
         tao.setOnClick(() -> {
             if (MinecraftClient.getInstance().player != null) {
                 MinecraftClient.getInstance().player.sendChatMessage("/warp tao");
@@ -147,6 +155,7 @@ public class warpGui extends LightweightGuiDescription {
         QoL.add(tao, 0, 60, 200, 20);
 
         WButton trades = new WButton(new TranslatableText("button.ac_qol.warp.trades"));
+        trades.setIcon(new ItemIcon(new ItemStack(Items.EMERALD)));
         trades.setOnClick(() -> {
             if (MinecraftClient.getInstance().player != null) {
                 MinecraftClient.getInstance().player.sendChatMessage("/warp trades");
@@ -159,6 +168,7 @@ public class warpGui extends LightweightGuiDescription {
             Different farm warps
          */
         WButton endermanfarm = new WButton(new TranslatableText("button.ac_qol.warp.endermanfarm"));
+        endermanfarm.setIcon(new ItemIcon(new ItemStack(Items.ENDER_PEARL)));
         endermanfarm.setOnClick(() -> {
             if (MinecraftClient.getInstance().player != null) {
                 MinecraftClient.getInstance().player.sendChatMessage("/warp endermanfarm");
@@ -167,6 +177,7 @@ public class warpGui extends LightweightGuiDescription {
         farms.add(endermanfarm, 0, 0, 100, 20);
 
         WButton farm = new WButton(new TranslatableText("button.ac_qol.warp.farm"));
+        farm.setIcon(new ItemIcon(new ItemStack(Items.NETHERITE_HOE)));
         farm.setOnClick(() -> {
             if (MinecraftClient.getInstance().player != null) {
                 MinecraftClient.getInstance().player.sendChatMessage("/warp farm");
@@ -175,6 +186,7 @@ public class warpGui extends LightweightGuiDescription {
         farms.add(farm, 0, 20, 100, 20);
 
         WButton mobfarm = new WButton(new TranslatableText("button.ac_qol.warp.mobfarm"));
+        mobfarm.setIcon(new ItemIcon(new ItemStack(Items.NETHERITE_SWORD)));
         mobfarm.setOnClick(() -> {
             if (MinecraftClient.getInstance().player != null) {
                 MinecraftClient.getInstance().player.sendChatMessage("/warp mobfarm");
@@ -187,6 +199,7 @@ public class warpGui extends LightweightGuiDescription {
             Areas for past events
          */
         WButton canada = new WButton(new TranslatableText("button.ac_qol.warp.canada"));
+        canada.setIcon(new ItemIcon(new ItemStack(Items.POWDER_SNOW_BUCKET)));
         canada.setOnClick(() -> {
             if (MinecraftClient.getInstance().player != null) {
                 MinecraftClient.getInstance().player.sendChatMessage("/warp canada");
@@ -195,6 +208,7 @@ public class warpGui extends LightweightGuiDescription {
         events.add(canada, 0, 0, 200, 20);
 
         WButton gwr = new WButton(new TranslatableText("button.ac_qol.warp.gwr"));
+        gwr.setIcon(new ItemIcon(new ItemStack(Items.GOLD_INGOT)));
         gwr.setOnClick(() -> {
             if (MinecraftClient.getInstance().player != null) {
                 MinecraftClient.getInstance().player.sendChatMessage("/warp gwr_world");
@@ -207,6 +221,7 @@ public class warpGui extends LightweightGuiDescription {
             Old areas that have gone through different iterations
          */
         WButton spawnArchive = new WButton(new TranslatableText("button.ac_qol.warp.spawn"));
+        spawnArchive.setIcon(new ItemIcon(new ItemStack(Items.BUNDLE)));
         spawnArchive.setOnClick(() -> {
             if (MinecraftClient.getInstance().player != null) {
                 MinecraftClient.getInstance().player.sendChatMessage("/spawn");
@@ -247,6 +262,7 @@ public class warpGui extends LightweightGuiDescription {
         archive.add(spawn4, 100, 40, 100, 20);
 
         WButton tardisArchive = new WButton(new TranslatableText("button.ac_qol.warp.tardis"));
+        tardisArchive.setIcon(new ItemIcon(new ItemStack(Items.BUNDLE)));
         tardisArchive.setOnClick(() -> {
             if (MinecraftClient.getInstance().player != null) {
                 MinecraftClient.getInstance().player.sendChatMessage("/warp tardis");
