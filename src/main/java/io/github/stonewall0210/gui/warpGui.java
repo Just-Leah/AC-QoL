@@ -6,10 +6,13 @@ import io.github.cottonmc.cotton.gui.widget.WPlainPanel;
 import io.github.cottonmc.cotton.gui.widget.WTabPanel;
 import io.github.cottonmc.cotton.gui.widget.data.Insets;
 import io.github.cottonmc.cotton.gui.widget.icon.ItemIcon;
+import io.github.cottonmc.cotton.gui.widget.icon.TextureIcon;
+import io.github.stonewall0210.Icons;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.text.TranslatableText;
+import net.minecraft.util.Identifier;
 
 /*
 This is where the warp GUI is stored
@@ -97,7 +100,7 @@ public class warpGui extends LightweightGuiDescription {
         main.add(wither, 100, 0, 100, 20);
 
         WButton minigames = new WButton(new TranslatableText("button.ac_qol.warp.minigames"));
-        minigames.setIcon(new ItemIcon(new ItemStack(Items.RED_BED)));
+        minigames.setIcon(new ItemIcon(new ItemStack(Icons.BED_OLD)));
         minigames.setOnClick(() -> {
             if (MinecraftClient.getInstance().player != null) {
                 MinecraftClient.getInstance().player.sendChatMessage("/warp minigames");
