@@ -33,6 +33,6 @@
     "minecraft": "1.17.x",
     "java": ">=16",
     "fabric-key-binding-api-v1": "*",
-    "libgui": "4.1.2+1.17.1"
+    "libgui": ">=4.1.2+1.17.1"
   }
 }
