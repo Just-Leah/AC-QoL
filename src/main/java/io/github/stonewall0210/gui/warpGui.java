@@ -80,30 +80,22 @@ public class warpGui extends LightweightGuiDescription {
 
         WButton shops = new WButton(new TranslatableText("button.ac_qol.warp.shops"));
         shops.setIcon(new ItemIcon(new ItemStack(Items.EMERALD)));
-        shops.setOnClick(() -> {
-            buildCommand("shops", false);
-        });
+        shops.setOnClick(() -> buildCommand("shops", false));
         main.add(shops, 0, 40, 100, 20);
 
         WButton wither = new WButton(new TranslatableText("button.ac_qol.warp.wither"));
         wither.setIcon(new ItemIcon(new ItemStack(Items.WITHER_ROSE)));
-        wither.setOnClick(() -> {
-            buildCommand("wither", false);
-        });
+        wither.setOnClick(() -> buildCommand("wither", false));
         main.add(wither, 100, 0, 100, 20);
 
         WButton minigames = new WButton(new TranslatableText("button.ac_qol.warp.minigames"));
         minigames.setIcon(new ItemIcon(new ItemStack(Icons.BED_OLD)));
-        minigames.setOnClick(() -> {
-            buildCommand("minigames", false);
-        });
+        minigames.setOnClick(() -> buildCommand("minigames", false));
         main.add(minigames, 100, 20, 100, 20);
 
         WButton tardis = new WButton(new TranslatableText("button.ac_qol.warp.tardis"));
         tardis.setIcon(new ItemIcon(new ItemStack(Items.PLAYER_HEAD)));
-        tardis.setOnClick(() -> {
-            buildCommand("tardis", false);
-        });
+        tardis.setOnClick(() -> buildCommand("tardis", false));
         main.add(tardis, 100, 40, 100, 20);
 
         /*
@@ -112,37 +104,27 @@ public class warpGui extends LightweightGuiDescription {
          */
         WButton calmrooms = new WButton(new TranslatableText("button.ac_qol.warp.calmrooms"));
         calmrooms.setIcon(new ItemIcon(new ItemStack(Items.NOTE_BLOCK)));
-        calmrooms.setOnClick(() -> {
-            buildCommand("calmrooms", false);
-        });
+        calmrooms.setOnClick(() -> buildCommand("calmrooms", false));
         QoL.add(calmrooms, 0, 0, 200, 20);
 
         WButton spamrooms = new WButton(new TranslatableText("button.ac_qol.warp.spamrooms"));
         spamrooms.setIcon(new ItemIcon(new ItemStack(Items.LEVER)));
-        spamrooms.setOnClick(() -> {
-            buildCommand("spamrooms", false);
-        });
+        spamrooms.setOnClick(() -> buildCommand("spamrooms", false));
         QoL.add(spamrooms, 0, 20, 200, 20);
 
         WButton jobs = new WButton(new TranslatableText("button.ac_qol.warp.jobs"));
         jobs.setIcon(new ItemIcon(new ItemStack(Items.NETHERITE_PICKAXE)));
-        jobs.setOnClick(() -> {
-            buildCommand("jobs", false);
-        });
+        jobs.setOnClick(() -> buildCommand("jobs", false));
         QoL.add(jobs, 0, 40, 200, 20);
 
         WButton tao = new WButton(new TranslatableText("button.ac_qol.warp.tao"));
         tao.setIcon(new ItemIcon(new ItemStack(Items.SPYGLASS)));
-        tao.setOnClick(() -> {
-            buildCommand("tao", false);
-        });
+        tao.setOnClick(() -> buildCommand("tao", false));
         QoL.add(tao, 0, 60, 200, 20);
 
         WButton trades = new WButton(new TranslatableText("button.ac_qol.warp.trades"));
         trades.setIcon(new ItemIcon(new ItemStack(Items.EMERALD)));
-        trades.setOnClick(() -> {
-            buildCommand("trades", false);
-        });
+        trades.setOnClick(() -> buildCommand("trades", false));
         farms.add(trades, 100, 20, 100, 20);
 
         /*
@@ -151,23 +133,17 @@ public class warpGui extends LightweightGuiDescription {
          */
         WButton endermanfarm = new WButton(new TranslatableText("button.ac_qol.warp.endermanfarm"));
         endermanfarm.setIcon(new ItemIcon(new ItemStack(Items.ENDER_PEARL)));
-        endermanfarm.setOnClick(() -> {
-            buildCommand("endermanfarm", false);
-        });
+        endermanfarm.setOnClick(() -> buildCommand("endermanfarm", false));
         farms.add(endermanfarm, 0, 0, 100, 20);
 
         WButton farm = new WButton(new TranslatableText("button.ac_qol.warp.farm"));
         farm.setIcon(new ItemIcon(new ItemStack(Items.NETHERITE_HOE)));
-        farm.setOnClick(() -> {
-            buildCommand("farm", false);
-        });
+        farm.setOnClick(() -> buildCommand("farm", false));
         farms.add(farm, 0, 20, 100, 20);
 
         WButton mobfarm = new WButton(new TranslatableText("button.ac_qol.warp.mobfarm"));
         mobfarm.setIcon(new ItemIcon(new ItemStack(Items.NETHERITE_SWORD)));
-        mobfarm.setOnClick(() -> {
-            buildCommand("mobfarm", false);
-        });
+        mobfarm.setOnClick(() -> buildCommand("mobfarm", false));
         farms.add(mobfarm, 100, 0, 100, 20);
 
         /*
@@ -176,16 +152,12 @@ public class warpGui extends LightweightGuiDescription {
          */
         WButton canada = new WButton(new TranslatableText("button.ac_qol.warp.canada"));
         canada.setIcon(new ItemIcon(new ItemStack(Items.POWDER_SNOW_BUCKET)));
-        canada.setOnClick(() -> {
-            buildCommand("canada", false);
-        });
+        canada.setOnClick(() -> buildCommand("canada", false));
         events.add(canada, 0, 0, 200, 20);
 
         WButton gwr = new WButton(new TranslatableText("button.ac_qol.warp.gwr"));
         gwr.setIcon(new ItemIcon(new ItemStack(Items.GOLD_INGOT)));
-        gwr.setOnClick(() -> {
-            buildCommand("gwr_world", false);
-        });
+        gwr.setOnClick(() -> buildCommand("gwr_world", false));
         events.add(gwr, 0, 20, 200, 20);
 
         /*
@@ -202,46 +174,32 @@ public class warpGui extends LightweightGuiDescription {
         archive.add(spawnArchive, 0, 0, 200, 20);
 
         WButton spawn1 = new WButton(new TranslatableText("button.ac_qol.warp.spawn1"));
-        spawn1.setOnClick(() -> {
-            buildCommand("spawn1", false);
-        });
+        spawn1.setOnClick(() -> buildCommand("spawn1", false));
         archive.add(spawn1, 0, 20, 100, 20);
 
         WButton spawn2 = new WButton(new TranslatableText("button.ac_qol.warp.spawn2"));
-        spawn2.setOnClick(() -> {
-            buildCommand("spawn2", false);
-        });
+        spawn2.setOnClick(() -> buildCommand("spawn2", false));
         archive.add(spawn2, 100, 20, 100, 20);
 
         WButton spawn3 = new WButton(new TranslatableText("button.ac_qol.warp.spawn3"));
-        spawn3.setOnClick(() -> {
-            buildCommand("spawn3", false);
-        });
+        spawn3.setOnClick(() -> buildCommand("spawn3", false));
         archive.add(spawn3, 0, 40, 100, 20);
 
         WButton spawn4 = new WButton(new TranslatableText("button.ac_qol.warp.spawn4"));
-        spawn4.setOnClick(() -> {
-            buildCommand("spawn4", false);
-        });
+        spawn4.setOnClick(() -> buildCommand("spawn4", false));
         archive.add(spawn4, 100, 40, 100, 20);
 
         WButton tardisArchive = new WButton(new TranslatableText("button.ac_qol.warp.tardis"));
         tardisArchive.setIcon(new ItemIcon(new ItemStack(Items.BUNDLE)));
-        tardisArchive.setOnClick(() -> {
-            buildCommand("tardis", false);
-        });
+        tardisArchive.setOnClick(() -> buildCommand("tardis", false));
         archive.add(tardisArchive, 0, 60, 200, 20);
 
         WButton tardis1 = new WButton(new TranslatableText("button.ac_qol.warp.tardis1"));
-        tardis1.setOnClick(() -> {
-            buildCommand("tardis1", false);
-        });
+        tardis1.setOnClick(() -> buildCommand("tardis1", false));
         archive.add(tardis1, 0, 80, 100, 20);
 
         WButton tardis2 = new WButton(new TranslatableText("button.ac_qol.warp.tardis2"));
-        tardis2.setOnClick(() -> {
-            buildCommand("tardis2", true);
-        });
+        tardis2.setOnClick(() -> buildCommand("tardis2", true));
         archive.add(tardis2, 100, 80, 100, 20);
 
         warpTabs.validate(this);
