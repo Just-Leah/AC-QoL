@@ -8,6 +8,7 @@
 ## Features
 
 - Warp GUI, with all of the current warps *as of 24/07/2021*
+- *WIP* Homes GUI. You can see the progress being made [on the `homes` branch](https://github.com/Stonewall0210/AC-QoL/tree/homes)
 
 ## Install instructions
 
