@@ -1,7 +1,7 @@
 # AC-QoL
 ### Client side mod with some quality of life features for Autcraft
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/Stonewall0210/AC-QoL/build) ![GitHub repo size](https://img.shields.io/github/repo-size/Stonewall0210/AC-QoL)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/Stonewall0210/AC-QoL/build) ![GitHub repo size](https://img.shields.io/github/repo-size/Stonewall0210/AC-QoL) ![GitHub commits since tagged version (main)](https://img.shields.io/github/commits-since/Stonewall0210/AC-QoL/v1.0.0/main?label=%5Bmain%5D%20commits%20since%20v1.0.0) ![GitHub commits since tagged version (homes)](https://img.shields.io/github/commits-since/Stonewall0210/AC-QoL/v1.0.0/homes?label=%5Bhomes%5D%20commits%20since%20v1.0.0)
 
 ---
 
