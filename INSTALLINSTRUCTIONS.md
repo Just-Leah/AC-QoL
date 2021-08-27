@@ -1,4 +1,4 @@
-1. [Download the JAR file linked at this sentence.](https://s3.amazonaws.com/files.enjin.com/483843/modules/forum/attachments/ac_qol-1.0.0_1628490514.jar)
+1. [Download the JAR file linked at this sentence.](https://github.com/Stonewall0210/AC-QoL/releases/download/v1.1.0/ac_qol-1.1.0.jar)
 2. Go to the [Fabric download page](https://fabricmc.net/use/) and download `Windows/EXE` if you are on windows. If you are on anything else, use `Universal/JAR` (Note that you need java installed if you use the jar installer)
 ![](https://cdn.discordapp.com/attachments/839983231984992266/871202089517330462/unknown.png)
 3. Open the installer. Check to make sure that the installer setting are set to the screenshot below. The loader version can be a later version.
