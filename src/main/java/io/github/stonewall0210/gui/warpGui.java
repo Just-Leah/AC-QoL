@@ -122,10 +122,10 @@ public class warpGui extends LightweightGuiDescription {
         tao.setOnClick(() -> buildCommand("tao", false));
         QoL.add(tao, 0, 60, 200, 20);
 
-        WButton trades = new WButton(new TranslatableText("button.ac_qol.warp.trades"));
-        trades.setIcon(new ItemIcon(new ItemStack(Items.EMERALD)));
-        trades.setOnClick(() -> buildCommand("trades", false));
-        farms.add(trades, 100, 20, 100, 20);
+        WButton mapart = new WButton(new TranslatableText("button.ac_qol.warp.mapart"));
+        mapart.setIcon(new ItemIcon(new ItemStack(Items.FILLED_MAP)));
+        mapart.setOnClick(() -> buildCommand("mapart", false));
+        QoL.add(mapart, 0, 80, 200, 20);
 
         /*
         Farms
@@ -145,6 +145,11 @@ public class warpGui extends LightweightGuiDescription {
         mobfarm.setIcon(new ItemIcon(new ItemStack(Items.NETHERITE_SWORD)));
         mobfarm.setOnClick(() -> buildCommand("mobfarm", false));
         farms.add(mobfarm, 100, 0, 100, 20);
+
+        WButton trades = new WButton(new TranslatableText("button.ac_qol.warp.trades"));
+        trades.setIcon(new ItemIcon(new ItemStack(Items.EMERALD)));
+        trades.setOnClick(() -> buildCommand("trades", false));
+        farms.add(trades, 100, 20, 100, 20);
 
         /*
         Events
