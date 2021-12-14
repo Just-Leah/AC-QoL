@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "ac_qol",
-  "version": "1.1.0",
+  "version": "1.2.0",
 
   "name": "Autcraft Quality of Life",
   "description": "A collection of QoL features for Autcraft",
@@ -28,11 +28,11 @@
   },
 
   "depends": {
-    "fabricloader": ">=0.11.3",
-    "fabric": "*",
-    "minecraft": "1.17.x",
-    "java": ">=16",
+    "fabricloader": ">=0.12.11",
+    "fabric": ">=0.44.0",
+    "minecraft": "1.18.x",
+    "java": ">=17",
     "fabric-key-binding-api-v1": "*",
-    "libgui": ">=4.1.2+1.17.1"
+    "libgui": ">=5.1.0+1.18"
   }
 }

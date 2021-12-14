@@ -38,7 +38,7 @@ public class AutcraftQoLClient implements ClientModInitializer {
          */
         ClientTickEvents.END_CLIENT_TICK.register(client -> { // Tells the game that we want to listen to something on the client side
             while (openGUI.wasPressed()) { // Listens for the keybind being pressed
-                MinecraftClient.getInstance().openScreen(new ACQoLScreen(new warpGui())); // Opens the warp GUI
+                MinecraftClient.getInstance().setScreen(new ACQoLScreen(new warpGui())); // Opens the warp GUI
             }
         });
     }
